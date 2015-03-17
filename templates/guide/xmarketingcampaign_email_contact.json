@@ -1,0 +1,62 @@
+{
+	"steps":[
+		{ 
+	        "element" : ".atk-button:contains(Add)",
+	        "title": "Add Subscription Categories",
+	        "content" : "This section Add  your <b>Subscription Categories</b>",        "placement": "top"
+	    },
+	    {
+	        "element" : ".atk-button:contains(Jump)",
+	        "title": "Jump Data Grabber",
+	        "content" : "This section allows you to edit your department, for that you must first click any of the department from previous section",
+	        "placement": "top"
+	    },
+	    {
+	        "element" : "th:contains(Total Phrases)",
+	        "title": "Total Phrases",
+	        "content" : "This item is here to tell you <b>how many Phrases you are having.</b>",
+	        "placement": "bottom"
+	    },
+	      {
+	        "element" : "th:contains(Un Grabbed Phrases)",
+	        "title": "Un Grabbed phrases",
+	        "content" : "This item is here to tell you <b>how any Un Grabbed Phrases you are having.</b>",
+	        "placement": "bottom"
+	    },
+	      {
+	        "element" : "th:contains(Total Assos Emails)",
+	        "title": "Total Assos Emails",
+	        "content" : "This item is here to tell you <b>Total Associated Emails.</b>",
+	        "placement": "bottom"
+	    }, 
+	      {
+	        "element" : "th:contains(Grabbed Emails)",
+	        "title": "Grabbed Emails",
+	        "content" : "This item is here to tell you  <b>All Grabbed Emails.</b>",
+	        "placement": "bottom"
+	    },
+	      { "element" : "th:contains(Emails By Other Apps)",
+	        "title": "Emails By Other Apps",
+	        "content" : "This item is here to tell you  <b>All Emails By Other Apps.</b>",
+	        "placement": "bottom"
+	    },
+	      {
+	        "element" : "th:contains(Bounced Emails)",
+	        "title": "Bounced Emails",
+	        "content" : "This item is here to tell you <b>All Bounced Emails.</b>",
+	        "placement": "bottom"
+	    },
+	      {
+	        "element" : "th:contains(Edit)",
+	        "title": "Edit",
+	        "content" : "This item is here for giving you <b>Functionality To Edit Your Enteries.</b>",
+	        "placement": "bottom"
+	    },
+	      {
+	        "element" : "th:contains(Delete)",
+	        "title": "Delete",
+	        "content" : "This item is here for giving you <b> Functionality To Delete Your Enteries.</b>",
+	        "placement": "left"
+	    }
+	]
+}

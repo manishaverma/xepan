@@ -4,7 +4,7 @@ class page_xMarketingCampaign_page_owner_emailcontacts extends page_xMarketingCa
 
 	function init(){
 		parent::init();
-		
+		$this->add('PageHelp',array('page'=>'xmarketingcampaign_email_contact'));
 		$total_phrases_vp = $this->total_phrases_vp();
 		$un_grabbed_phrases_vp = $this->un_grabbed_phrases_vp();
 		$total_assos_emails_vp = $this->total_assos_emails_vp();
