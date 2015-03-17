@@ -188,4 +188,36 @@ class Model_OrderDetails extends \Model_Document{
 		
 	}
 
+
+	//Return OrderItem DepartmentalStatus
+	//$with_custom_Fields = true; means also return departmnet associated CustomFields of OrderItem in Human Redable
+	function redableDeptartmentalStatus($with_custom_fields=false){
+		if(!$this->loaded())
+			return false;
+
+		$d = $this->deptartmentalStatus();
+		$str = "";
+		foreach ($d as $department) {
+			$str .= $department['department']." ( ".$department['status']." )";
+			if($with_custom_fields){
+				$array = json_decode($this['custom_fields'],true);
+				foreach ($array as $id => $cf ) {
+					// $str.=$this['custom_fields'];
+					if($department['department_id'] == $id){
+						if(!empty($cf)){
+							$ar[$id] = $cf;
+							$str .= "<br>[".$this->ref('item_id')->genericRedableCustomFieldAndValue(json_encode($ar))." ]<br>";
+							unset($ar[$id]);							
+						}else{
+							$str.="<br>";
+						}
+					}
+				}
+			}
+
+		}
+
+		return $str;
+	}
+
 }
